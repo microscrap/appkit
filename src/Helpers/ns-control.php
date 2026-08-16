@@ -1,6 +1,7 @@
 <?php
 
 use AppKit\NS\NSControl\NSControl;
+use Microscrap\Bindings\AppKit\Enums\TextAlignment;
 
 /*
 | NSControl helpers — 1:1 over AppKit\NS\NSControl\NSControl
@@ -109,5 +110,15 @@ if (! function_exists('ns_control_get_control_size')) {
     function ns_control_get_control_size(int $control): int
     {
         return NSControl::getControlSize($control);
+    }
+}
+
+if (! function_exists('ns_control_set_alignment')) {
+    function ns_control_set_alignment(int $control, TextAlignment|int $alignment): void
+    {
+        NSControl::setAlignment(
+            $control,
+            $alignment instanceof TextAlignment ? $alignment->value : $alignment
+        );
     }
 }

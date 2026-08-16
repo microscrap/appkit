@@ -1,6 +1,7 @@
 <?php
 
 use AppKit\NS\NSText\NSText;
+use Microscrap\Bindings\AppKit\Enums\TextAlignment;
 
 /*
 | NSText helpers — 1:1 over AppKit\NS\NSText\NSText
@@ -126,9 +127,12 @@ if (! function_exists('ns_text_set_font')) {
 }
 
 if (! function_exists('ns_text_set_alignment')) {
-    function ns_text_set_alignment(int $text, int $alignment): void
+    function ns_text_set_alignment(int $text, TextAlignment|int $alignment): void
     {
-        NSText::setAlignment($text, $alignment);
+        NSText::setAlignment(
+            $text,
+            $alignment instanceof TextAlignment ? $alignment->value : $alignment
+        );
     }
 }
 

@@ -1,3 +1,17 @@
+# OKF log
+
+## 2026-08-16 (NSTextAlignment helper unwrap)
+
+- `ns_control_set_alignment`, `ns_text_set_alignment`, and `ns_paragraphstyle_set_alignment` accept `TextAlignment` or raw int. Enum ABI matches current macOS (`LEFT=0` `CENTER=1` `RIGHT=2`). Pest locks those values.
+
+## 2026-08-16 (NSTextAlignment ABI)
+
+- Current macOS SDK sets `TARGET_ABI_USES_IOS_VALUES`: LEFT=0 CENTER=1 RIGHT=2. Do not pass historic macOS center=2 into `ns_control_set_alignment`.
+
+## 2026-08-16 (NSControl setAlignment helper)
+
+- Helper `ns_control_set_alignment` on `ns-control.php`. HelperNames updated. Current macOS `NSTextAlignment` ABI (`TARGET_ABI_USES_IOS_VALUES`): 0 left, 1 center, 2 right. Historic macOS center=2/right=1 is not this SDK.
+
 ## 2026-08-15 (a11y / tabs / NSGraphics helpers)
 
 - **New helpers**: `ns_accessibilityelement_*`, `ns_accessibilitycustomrotor_*`, `ns_accessibilitycustomrotoritem_*`, `ns_accessibilitycustomrotoritemresult_*`, `ns_windowtab_*`, `ns_windowtabgroup_*`, `ns_titlebaraccessoryviewcontroller_*`, `ns_graphics_*`, `ns_protocol_*`, `ns_accessibility_*`.

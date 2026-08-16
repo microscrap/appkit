@@ -3,7 +3,7 @@ type: Index
 title: microscrap/appkit
 description: Helpers-only PHP bindings over ext-appkit
 status: draft
-generated: { by: cursor-agent/grok-4.6, at: "2026-08-15T16:00:00Z" }
+generated: { by: cursor-agent/grok-4.6, at: "2026-08-16T19:35:00Z" }
 ---
 
 # microscrap/appkit

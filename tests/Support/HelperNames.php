@@ -146,6 +146,7 @@ final class HelperNames
             'getState' => 'ns_control_get_state',
             'setControlSize' => 'ns_control_set_control_size',
             'getControlSize' => 'ns_control_get_control_size',
+            'setAlignment' => 'ns_control_set_alignment',
         ],
         'AppKit\\NS\\NSCell\\NSCell' => [
             'createText' => 'ns_cell_create_text',

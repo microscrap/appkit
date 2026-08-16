@@ -2,7 +2,7 @@
 
 namespace Microscrap\Bindings\AppKit\Enums;
 
-/** AppKit `NSTextAlignment` (NSInteger). Pass `::CASE->value` into ns_* ints. */
+/** AppKit `NSTextAlignment` (NSInteger). Current macOS ABI (`TARGET_ABI_USES_IOS_VALUES`): LEFT=0 CENTER=1 RIGHT=2. Pass `::CASE->value` into ns_* ints. */
 enum TextAlignment: int
 {
     case LEFT = 0;

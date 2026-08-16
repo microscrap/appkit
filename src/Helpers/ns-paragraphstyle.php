@@ -1,6 +1,7 @@
 <?php
 
 use AppKit\NS\NSParagraphStyle\NSParagraphStyle;
+use Microscrap\Bindings\AppKit\Enums\TextAlignment;
 
 /*
 | NSParagraphStyle helpers — 1:1 over AppKit\NS\NSParagraphStyle\NSParagraphStyle
@@ -70,9 +71,12 @@ if (! function_exists('ns_paragraphstyle_alignment')) {
 }
 
 if (! function_exists('ns_paragraphstyle_set_alignment')) {
-    function ns_paragraphstyle_set_alignment(int $style, int $alignment): void
+    function ns_paragraphstyle_set_alignment(int $style, TextAlignment|int $alignment): void
     {
-        NSParagraphStyle::setAlignment($style, $alignment);
+        NSParagraphStyle::setAlignment(
+            $style,
+            $alignment instanceof TextAlignment ? $alignment->value : $alignment
+        );
     }
 }
 
