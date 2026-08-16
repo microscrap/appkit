@@ -1,0 +1,17 @@
+<?php
+
+namespace Microscrap\Bindings\AppKit\Enums;
+
+/** AppKit `NSEventModifierFlags` (NSUInteger). Pass `::CASE->value` into ns_* ints. */
+enum EventModifierFlags: int
+{
+    case EVENT_MODIFIER_FLAG_CAPS_LOCK = 65536;
+    case EVENT_MODIFIER_FLAG_SHIFT = 131072;
+    case EVENT_MODIFIER_FLAG_CONTROL = 262144;
+    case EVENT_MODIFIER_FLAG_OPTION = 524288;
+    case EVENT_MODIFIER_FLAG_COMMAND = 1048576;
+    case EVENT_MODIFIER_FLAG_NUMERIC_PAD = 2097152;
+    case EVENT_MODIFIER_FLAG_HELP = 4194304;
+    case EVENT_MODIFIER_FLAG_FUNCTION = 8388608;
+    case EVENT_MODIFIER_FLAG_DEVICE_INDEPENDENT_FLAGS_MASK = 4294901760;
+}

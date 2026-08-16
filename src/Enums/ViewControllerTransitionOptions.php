@@ -1,0 +1,17 @@
+<?php
+
+namespace Microscrap\Bindings\AppKit\Enums;
+
+/** AppKit `NSViewControllerTransitionOptions` (NSUInteger). Pass `::CASE->value` into ns_* ints. */
+enum ViewControllerTransitionOptions: int
+{
+    case VIEW_CONTROLLER_TRANSITION_NONE = 0;
+    case VIEW_CONTROLLER_TRANSITION_CROSSFADE = 1;
+    case VIEW_CONTROLLER_TRANSITION_SLIDE_UP = 2;
+    case VIEW_CONTROLLER_TRANSITION_SLIDE_DOWN = 3;
+    case VIEW_CONTROLLER_TRANSITION_SLIDE_LEFT = 4;
+    case VIEW_CONTROLLER_TRANSITION_SLIDE_RIGHT = 5;
+    case VIEW_CONTROLLER_TRANSITION_SLIDE_FORWARD = 6;
+    case VIEW_CONTROLLER_TRANSITION_SLIDE_BACKWARD = 7;
+    case VIEW_CONTROLLER_TRANSITION_ALLOW_USER_INTERACTION = 8;
+}

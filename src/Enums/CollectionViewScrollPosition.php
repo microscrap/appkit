@@ -1,0 +1,19 @@
+<?php
+
+namespace Microscrap\Bindings\AppKit\Enums;
+
+/** AppKit `NSCollectionViewScrollPosition` (NSUInteger). Pass `::CASE->value` into ns_* ints. */
+enum CollectionViewScrollPosition: int
+{
+    case NONE = 0;
+    case TOP = 1;
+    case CENTERED_VERTICALLY = 2;
+    case BOTTOM = 4;
+    case NEAREST_HORIZONTAL_EDGE = 512;
+    case LEFT = 8;
+    case CENTERED_HORIZONTALLY = 16;
+    case RIGHT = 32;
+    case LEADING_EDGE = 64;
+    case TRAILING_EDGE = 128;
+    case NEAREST_VERTICAL_EDGE = 256;
+}

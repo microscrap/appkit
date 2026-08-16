@@ -1,0 +1,19 @@
+<?php
+
+namespace Microscrap\Bindings\AppKit\Enums;
+
+/** AppKit `NSWorkspaceLaunchOptions` (NSUInteger). Pass `::CASE->value` into ns_* ints. */
+enum WorkspaceLaunchOptions: int
+{
+    case WORKSPACE_LAUNCH_AND_PRINT = 0;
+    case WORKSPACE_LAUNCH_WITH_ERROR_PRESENTATION = 1;
+    case WORKSPACE_LAUNCH_INHIBITING_BACKGROUND_ONLY = 2;
+    case WORKSPACE_LAUNCH_WITHOUT_ADDING_TO_RECENTS = 3;
+    case WORKSPACE_LAUNCH_WITHOUT_ACTIVATION = 4;
+    case WORKSPACE_LAUNCH_ASYNC = 5;
+    case WORKSPACE_LAUNCH_NEW_INSTANCE = 6;
+    case WORKSPACE_LAUNCH_AND_HIDE = 7;
+    case WORKSPACE_LAUNCH_AND_HIDE_OTHERS = 8;
+    case WORKSPACE_LAUNCH_ALLOWING_CLASSIC_STARTUP = 10;
+    case WORKSPACE_LAUNCH_PREFERRING_CLASSIC = 11;
+}

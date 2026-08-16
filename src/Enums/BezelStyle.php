@@ -1,0 +1,22 @@
+<?php
+
+namespace Microscrap\Bindings\AppKit\Enums;
+
+/** AppKit `NSBezelStyle` (NSUInteger). Pass `::CASE->value` into ns_* ints. */
+enum BezelStyle: int
+{
+    case AUTOMATIC = 0;
+    case PUSH = 1;
+    case FLEXIBLE_PUSH = 2;
+    case DISCLOSURE = 5;
+    case CIRCULAR = 7;
+    case HELP_BUTTON = 9;
+    case SMALL_SQUARE = 10;
+    case TOOLBAR = 11;
+    case ACCESSORY_BAR_ACTION = 12;
+    case ACCESSORY_BAR = 13;
+    case PUSH_DISCLOSURE = 14;
+    case BADGE = 15;
+    case SHADOWLESS_SQUARE = 6;
+    case TEXTURED_SQUARE = 8;
+}
