@@ -47,3 +47,17 @@ if (! function_exists('ns_alert_run_modal')) {
         return NSAlert::runModal($alert);
     }
 }
+
+if (! function_exists('ns_alert_begin_sheet')) {
+    function ns_alert_begin_sheet(int $alert, int $window): void
+    {
+        NSAlert::beginSheet($alert, $window);
+    }
+}
+
+if (! function_exists('ns_alert_poll_response')) {
+    function ns_alert_poll_response(int $alert): int
+    {
+        return NSAlert::pollResponse($alert);
+    }
+}

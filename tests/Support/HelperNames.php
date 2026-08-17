@@ -147,6 +147,7 @@ final class HelperNames
             'setControlSize' => 'ns_control_set_control_size',
             'getControlSize' => 'ns_control_get_control_size',
             'setAlignment' => 'ns_control_set_alignment',
+            'setFont' => 'ns_control_set_font',
         ],
         'AppKit\\NS\\NSCell\\NSCell' => [
             'createText' => 'ns_cell_create_text',
@@ -217,6 +218,16 @@ final class HelperNames
             'magnification' => 'ns_magnificationgesturerecognizer_magnification',
             'setMagnification' => 'ns_magnificationgesturerecognizer_set_magnification',
             'nsMagnificationGestureRecognizer' => 'ns_gesturerecognizer_nsgesturerecognizer',
+        ],
+        'AppKit\\NS\\NSAlert\\NSAlert' => [
+            'create' => 'ns_alert_create',
+            'destroy' => 'ns_alert_destroy',
+            'setMessage' => 'ns_alert_set_message',
+            'setInfo' => 'ns_alert_set_info',
+            'addButton' => 'ns_alert_add_button',
+            'runModal' => 'ns_alert_run_modal',
+            'beginSheet' => 'ns_alert_begin_sheet',
+            'pollResponse' => 'ns_alert_poll_response',
         ],
         'AppKit\\NS\\NSAppearance\\NSAppearance' => [
             'wrap' => 'ns_appearance_wrap',

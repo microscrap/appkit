@@ -1,5 +1,15 @@
 # OKF log
 
+## 2026-08-16 (NSControl setFont helper)
+
+- Helper `ns_control_set_font` on `ns-control.php`. `HelperNames` map extended with `setFont` → `ns_control_set_font`. Takes `NSFont` handle from `ns_font_*` helpers.
+
+## 2026-08-16 (NSAlert sheet helpers)
+
+- **Added**: `ns_alert_begin_sheet`, `ns_alert_poll_response` over `NSAlert::beginSheet` / `pollResponse`.
+- **Tests**: `HelperNames` map extended with full `NSAlert` surface.
+- **Trap**: `no-runmodal-in-poll.md` documents sheet + poll as the in-loop pattern.
+
 ## 2026-08-16 (NSTextAlignment helper unwrap)
 
 - `ns_control_set_alignment`, `ns_text_set_alignment`, and `ns_paragraphstyle_set_alignment` accept `TextAlignment` or raw int. Enum ABI matches current macOS (`LEFT=0` `CENTER=1` `RIGHT=2`). Pest locks those values.

@@ -122,3 +122,10 @@ if (! function_exists('ns_control_set_alignment')) {
         );
     }
 }
+
+if (! function_exists('ns_control_set_font')) {
+    function ns_control_set_font(int $control, int $font): void
+    {
+        NSControl::setFont($control, $font);
+    }
+}
