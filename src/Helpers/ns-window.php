@@ -124,3 +124,10 @@ if (! function_exists('ns_window_add_titlebar_accessory_view_controller')) {
         NSWindow::addTitlebarAccessoryViewController($window, $controller);
     }
 }
+
+if (! function_exists('ns_window_set_did_resize')) {
+    function ns_window_set_did_resize(int $window, mixed $callback): void
+    {
+        NSWindow::setDidResize($window, $callback);
+    }
+}

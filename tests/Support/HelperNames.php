@@ -40,6 +40,7 @@ final class HelperNames
             'tab' => 'ns_window_tab',
             'tabGroup' => 'ns_window_tab_group',
             'addTitlebarAccessoryViewController' => 'ns_window_add_titlebar_accessory_view_controller',
+            'setDidResize' => 'ns_window_set_did_resize',
         ],
         'AppKit\\NS\\NSView\\NSView' => [
             'create' => 'ns_view_create',
@@ -85,6 +86,7 @@ final class HelperNames
         'AppKit\\NS\\NSMenu\\NSMenu' => [
             'installDefault' => 'ns_menu_install_default',
             'addItem' => 'ns_menu_add_item',
+            'enableAbout' => 'ns_menu_enable_about',
             'pollAction' => 'ns_menu_poll_action',
         ],
         'AppKit\\NS\\NSMenuItem\\NSMenuItem' => [

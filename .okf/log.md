@@ -1,5 +1,13 @@
 # OKF log
 
+## 2026-08-17 (ns_menu_enable_about)
+
+- Helper `ns_menu_enable_about` on `ns-menu.php` over `NSMenu::enableAbout`. `HelperNames` map extended (`enableAbout` → `ns_menu_enable_about`). Action id stays a string (default `'about'`). Bar label is the process name; do not `addItem('php', …)` for About.
+
+## 2026-08-17 (ns_window_set_did_resize)
+
+- Helper `ns_window_set_did_resize` on `ns-window.php` over `NSWindow::setDidResize`. `HelperNames` map extended. Live-resize layout runs from `windowDidResize:` because `ns_app_poll` is stuck in nested tracking until mouse-up.
+
 ## 2026-08-16 (NSControl setFont helper)
 
 - Helper `ns_control_set_font` on `ns-control.php`. `HelperNames` map extended with `setFont` → `ns_control_set_font`. Takes `NSFont` handle from `ns_font_*` helpers.

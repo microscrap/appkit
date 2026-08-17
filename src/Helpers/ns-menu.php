@@ -20,6 +20,13 @@ if (! function_exists('ns_menu_add_item')) {
     }
 }
 
+if (! function_exists('ns_menu_enable_about')) {
+    function ns_menu_enable_about(bool $enabled, string $actionId = 'about'): bool
+    {
+        return NSMenu::enableAbout($enabled, $actionId);
+    }
+}
+
 if (! function_exists('ns_menu_poll_action')) {
     function ns_menu_poll_action(): string
     {

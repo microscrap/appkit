@@ -3,7 +3,7 @@ type: APIMap
 title: Helper map (ns_*)
 description: AppKit helpers mapped to AppKit\NS\* methods
 status: draft
-generated: { by: cursor-agent/grok-4.6, at: "2026-08-16T19:35:00Z" }
+generated: { by: cursor-agent/grok-4.6, at: "2026-08-17T12:45:00Z" }
 ---
 
 # Surface (moved from microscrap/metal)
@@ -14,7 +14,7 @@ Helpers match the C ABI (`ns_app_*`, `ns_window_*`, `ns_button_*`, `ns_label_cre
 |---------|-----------|
 | `ns_app_*` | `NSApplication` (includes `ns_app_nsapp`, `ns_app_appkit_version_number`) |
 | `ns_responder_*` | `NSResponder` |
-| `ns_window_*` | `NSWindow` (includes `ns_window_tab`, `ns_window_tab_group`, `ns_window_add_titlebar_accessory_view_controller`) |
+| `ns_window_*` | `NSWindow` (includes `ns_window_tab`, `ns_window_tab_group`, `ns_window_add_titlebar_accessory_view_controller`, `ns_window_set_did_resize`) |
 | `ns_windowcontroller_*` | `NSWindowController` |
 | `ns_view_*` | `NSView` (plain; no Metal) |
 | `ns_viewcontroller_*` | `NSViewController` |
@@ -37,7 +37,7 @@ Helpers match the C ABI (`ns_app_*`, `ns_window_*`, `ns_button_*`, `ns_label_cre
 | `ns_filepromiseprovider_*` / `ns_filepromisereceiver_*` | Promised file drag |
 | `ns_storyboardsegue_*` | Storyboard segue |
 | `ns_alert_*` / `ns_openpanel_run` / `ns_savepanel_run` / `ns_pagelayout_*` / `ns_printinfo_*` / `ns_printoperation_*` / `ns_printpanel_*` / `ns_printer_*` | Dialogs / page setup / print |
-| `ns_menu_*` / `ns_menuitem_*` | `NSMenu` / `NSMenuItem` (full bind; `ns_menu_add_item` alias kept) |
+| `ns_menu_*` / `ns_menuitem_*` | `NSMenu` / `NSMenuItem` (full bind; `ns_menu_add_item` alias kept; `ns_menu_enable_about` opt-in About under the app menu) |
 | `ns_event_*` | `NSEvent` (keyboard / mouse) |
 | `ns_magnificationgesturerecognizer_*` / shared `ns_gesturerecognizer_*` | `NSMagnificationGestureRecognizer` |
 | `ns_appearance_*` | `NSAppearance` |
